@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "school-plug-mobile",
+    "name": "SchoolPlug",
     "slug": "school-plug-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Logo.png",
     "scheme": "schoolplugmobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

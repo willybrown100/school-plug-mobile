@@ -40,25 +40,25 @@ const Typography = ({
   const getFontFamily = (weight: TypographyProps["weight"]) => {
     switch (weight) {
       case "100":
-        return "Nunito-ExtraLight";
+        return "Inter-Thin";
       case "200":
-        return "Nunito-Light";
+        return "Inter-ExtraLight";
       case "300":
-        return "Nunito-Regular";
+        return "Inter-Light";
       case "400":
-        return "Nunito-Regular";
+        return "Inter-Regular";
       case "500":
-        return "Nunito-Medium";
+        return "Inter-Medium";
       case "600":
-        return "Nunito-SemiBold";
+        return "Inter-SemiBold";
       case "700":
-        return "Nunito-Bold";
+        return "Inter-Bold";
       case "800":
-        return "Nunito-ExtraBold";
+        return "Inter-ExtraBold";
       case "900":
-        return "Nunito-Black";
+        return "Inter-Black";
       default:
-        return "Nunito-Regular";
+        return "Inter-Regular";
     }
   };
   return (
