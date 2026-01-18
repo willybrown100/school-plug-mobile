@@ -1,7 +1,7 @@
 export const Colors = {
-	error: "#D92D20",
+	error: "#EC0E24",
 	primary: {
-		main: "#0E0E0E",
+		main: "#FAFAFA",
 		blue: "#1288FC", 
 		darkBlue: "#0B5297",
 	},
@@ -15,16 +15,16 @@ export const Colors = {
 		medium2: "#B8B8B8",
 	},
 	black: {
-		main: "#000",
-		light: "#1E1E2D",
-		dark: "#232533",
+		main: "#181818",
+		light: "#2D2D2D",
+		dark: "#181818",
 		
 		medium: "#1A1A1A",
 	},
 	gray: {
 		light: "#1C1C1C",
 		dark: "#454545",
-		medium: "#8F8F8F",
+		medium: "#939393",
 		medium2: "#6A6A6A",
 	},
 	background:{

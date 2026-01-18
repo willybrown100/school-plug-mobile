@@ -1,7 +1,8 @@
-import EventsIcon from "@/components/icons/EventsIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
-import PayBillsIcon from "@/components/icons/PayBillsIcon";
-import TrendsIcon from "@/components/icons/TrendsIcon";
+import MoreIcon from "@/components/icons/MoreIcon";
+import NotificationBell from "@/components/icons/NotificationBell";
+import SearchIcon from "@/components/icons/SearchIcon";
+import Wallet from "@/components/icons/Wallet";
 import { TabBarProvider, useTabBar } from "@/context/TabBarContext";
 import { Tabs } from "expo-router";
 import React from "react";
@@ -76,12 +77,14 @@ const AnimatedTabs = () => {
               const Icon = () => {
                 if (route.name === "home")
                   return <HomeIcon focused={isFocused} color={color} />;
-                if (route.name === "paybills")
-                  return <PayBillsIcon focused={isFocused} color={color} />;
-                if (route.name === "events")
-                  return <EventsIcon focused={isFocused} color={color} />;
-                if (route.name === "trends")
-                  return <TrendsIcon focused={isFocused} color={color} />;
+                if (route.name === "search")
+                  return <SearchIcon focused={isFocused} color={color} />;
+                if (route.name === "wallet")
+                  return <Wallet focused={isFocused} color={color} />;
+                if (route.name === "notification")
+                  return <NotificationBell focused={isFocused} color={color} />;
+                if (route.name === "more")
+                  return <MoreIcon focused={isFocused} color={color} />;
                 return null;
               };
 
@@ -114,23 +117,30 @@ const AnimatedTabs = () => {
           }}
         />
         <Tabs.Screen
-          name="paybills"
+          name="search"
           options={{
-            title: "Pay Bills",
+            title: "Search",
             headerShown: false,
           }}
         />
         <Tabs.Screen
-          name="events"
+          name="wallet"
           options={{
-            title: "Events",
+            title: "Wallet",
             headerShown: false,
           }}
         />
         <Tabs.Screen
-          name="trends"
+          name=" more"
           options={{
-            title: "Trends",
+            title: "More",
+            headerShown: false,
+          }}
+        />
+        <Tabs.Screen
+          name="notification"
+          options={{
+            title: "Notification",
             headerShown: false,
           }}
         />

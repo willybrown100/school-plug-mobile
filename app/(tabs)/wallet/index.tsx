@@ -1,4 +1,3 @@
-import FloatingActionButton from "@/components/FloatingActionButton";
 import Typography from "@/components/Typography";
 import { useTabBarScroll } from "@/hooks/useTabBarScroll";
 import { FlashList } from "@shopify/flash-list";
@@ -8,10 +7,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const DATA = [...Array(30)].map((_, i) => ({
   id: i.toString(),
-  title: `Trend #${i + 1}`,
+  title: `Event #${i + 1}`,
 }));
 
-const Trends = () => {
+const Events = () => {
   const scrollProps = useTabBarScroll();
   const TypedFlashList = FlashList as any;
 
@@ -25,7 +24,7 @@ const Trends = () => {
           <View style={styles.card}>
             <Typography weight="600">{item.title}</Typography>
             <Typography size={14} color="#666" style={{ marginTop: 8 }}>
-              Community trends powered by FlashList.
+              Upcoming school events displayed using FlashList.
             </Typography>
           </View>
         )}
@@ -39,18 +38,15 @@ const Trends = () => {
             weight="700"
             style={{ marginTop: 24, marginBottom: 10 }}
           >
-            Trends
+            Events
           </Typography>
         )}
-      />
-      <FloatingActionButton
-        onPress={() => console.log("Trends action pressed")}
       />
     </SafeAreaView>
   );
 };
 
-export default Trends;
+export default Events;
 
 const styles = StyleSheet.create({
   card: {

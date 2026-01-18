@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SchoolPlug",
-    "slug": "school-plug-mobile",
+    "slug": "SchoolPlug",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/Logo.png",
@@ -10,9 +10,37 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.sayhitobona.schoolplugmobile"
+      "bundleIdentifier": "com.sayhitobona.schoolplugmobile",
+      "infoPlist": {
+				"NSContactsUsageDescription": "We need access to your contacts to help you connect and communicate easily with your friends and service providers.",
+				"NSLocationWhenInUseUsageDescription": "We use your location to set your store's address.",
+				"NSLocationAlwaysAndWhenInUseUsageDescription": "We use your location to set your store's address.",
+				"NSPhotoLibraryUsageDescription": "We need access to your photo library to select photos.",
+				"UIBackgroundModes": ["audio", "remote-notification"],
+				"NSCameraUsageDescription": "SchoolPlug needs access to your camera to enable video calls.",
+				"NSMicrophoneUsageDescription": "SchoolPlug needs access to your microphone to enable audio and video calls.",
+				"NSSpeechRecognitionUsageDescription": "SchoolPlug wants to securely recognize your speech for voice commands and transcription.",
+				"NSBluetoothAlwaysUsageDescription": "SchoolPlug needs access to Bluetooth to connect to Bluetooth devices for calls.",
+				"NSBluetoothPeripheralUsageDescription": "SchoolPlug needs access to  Bluetooth to connect to Bluetooth devices for calls."
+			}
     },
     "android": {
+      "permissions": [
+				"CAMERA",
+				"RECORD_AUDIO",
+				"READ_MEDIA_IMAGES",
+				"ACCESS_COARSE_LOCATION",
+				"ACCESS_FINE_LOCATION",
+				"android.permission.ACCESS_NETWORK_STATE",
+				"android.permission.CAMERA",
+				"android.permission.INTERNET",
+				"android.permission.MODIFY_AUDIO_SETTINGS",
+				"android.permission.RECORD_AUDIO",
+				"android.permission.SYSTEM_ALERT_WINDOW",
+				"android.permission.WAKE_LOCK",
+				"android.permission.BLUETOOTH",
+				"android.permission.POST_NOTIFICATIONS"
+			],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -35,9 +63,9 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#174489",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#174489"
           }
         }
       ]
